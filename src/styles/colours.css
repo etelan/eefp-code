@@ -1,0 +1,8 @@
+/* Master color definitions */
+:root {
+    --background-color: #004225; /* Dark green for solidarity */
+    --text-color: #FFFFFF; /* White for readability */
+    --accent-color: #FF0000; /* Red for resistance */
+    --neutral-color: #e5d6cf; /* Existing beige color */
+    --black-color: #000000; /* Black for bold elements */
+}
