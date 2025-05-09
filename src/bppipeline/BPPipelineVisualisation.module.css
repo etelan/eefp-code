@@ -31,7 +31,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: visible; /* Allow eleme: Take Action Against the Pipelinents to extend beyond the container */
+    justify-content: center; /* Center content vertically */
+    overflow: visible; /* Allow elements to extend beyond the container */
 }
 
 .svg {
@@ -68,4 +69,36 @@
 
 .takeActionButton:hover {
   background-color: darkred;
+}
+
+.flashingButton {
+  background-color: #fbe87d; /* Bright yellow */
+  color: black; /* Black text for contrast */
+  border: 3px solid #fbe87d; /* Initial border color */
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold; /* Make the text bold */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  animation: flashing-border 1s infinite; /* Add flashing animation */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: #ffd700; /* Bright yellow */
+  }
+  50% {
+    border-color: #ffc107; /* Slightly darker yellow */
+  }
+  100% {
+    border-color: #ffd700; /* Bright yellow */
+  }
+}
+
+.flashingButton:hover {
+  background-color: #ffc107; /* Slightly darker yellow on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
