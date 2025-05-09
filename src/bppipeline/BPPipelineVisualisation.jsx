@@ -5,25 +5,40 @@ import styles from './BPPipelineVisualisation.module.css';
 export default function BPPipelineVisualisation() {
   const [moneyPositions, setMoneyPositions] = useState([0, 33, 66]);
   const [oilPositions, setOilPositions] = useState([0, 33, 66]);
+  const [isActionTaken, setIsActionTaken] = useState(false);
 
   useEffect(() => {
-    const moneyInterval = setInterval(() => {
-      setMoneyPositions((prev) => prev.map((pos) => (pos < 100 ? pos + 2 : 0)));
-    }, 30);
+  let normalSpeed = 10; // Fast speed
+  let reducedSpeed = Math.round(normalSpeed / 0.33); // 33% of the normal speed
 
-    const oilInterval = setInterval(() => {
-      setOilPositions((prev) => prev.map((pos) => (pos < 100 ? pos + 2 : 0)));
-    }, 30);
+  let moneySpeed = isActionTaken ? reducedSpeed : normalSpeed;
+  let oilSpeed = isActionTaken ? reducedSpeed : normalSpeed;
 
-    return () => {
-      clearInterval(moneyInterval);
-      clearInterval(oilInterval);
-    };
-  }, []);
+  const moneyInterval = setInterval(() => {
+    setMoneyPositions((prev) =>
+      prev.map((pos) => (pos < 100 ? pos + (isActionTaken ? 0.2 : 2) : 0))
+    );
+  }, moneySpeed);
+
+  const oilInterval = setInterval(() => {
+    setOilPositions((prev) =>
+      prev.map((pos) => (pos < 100 ? pos + (isActionTaken ? 0.2 : 2) : 0))
+    );
+  }, oilSpeed);
+
+  return () => {
+    clearInterval(moneyInterval);
+    clearInterval(oilInterval);
+  };
+}, [isActionTaken]);
+
+  const handleTakeAction = () => {
+    setIsActionTaken(true);
+  };
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Flow Diagram: BP, UK, and Israel</h2>
+      <h2 className={styles.title}>Disrupt the Flow</h2>
 
       <div className={styles.diagramWrapper}>
         {/* UK */}
@@ -35,7 +50,7 @@ export default function BPPipelineVisualisation() {
               y="0"
               width="200"
               height="300"
-              fill="none" // Ensures no fill is applied
+              fill="none"
             />
           </svg>
           <h3 className={styles.text}>UK</h3>
@@ -45,14 +60,38 @@ export default function BPPipelineVisualisation() {
         <svg width="100" height="100" viewBox="0 0 100 100">
           <defs>
             <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="green" />
+              <polygon points="0 0, 10 3.5, 0 7" fill={isActionTaken ? 'darkred' : 'green'} />
             </marker>
           </defs>
-          <text x="50" y="30" fontSize="20" fill="green" textAnchor="middle">MONEY</text>
-          <line x1="0" y1="50" x2="100" y2="50" stroke="green" strokeWidth="3" markerEnd="url(#arrowhead)" strokeDasharray="5,5" />
+          <text x="50" y="30" fontSize="20" fill={isActionTaken ? 'darkred' : 'green'} textAnchor="middle">
+            {isActionTaken ? (
+              <>
+                <tspan x="50" dy="-5">LESS</tspan>
+                <tspan x="50" dy="15">MONEY</tspan>
+              </>
+            ) : (
+              'MONEY'
+            )}
+          </text>
+          <line
+            x1="0"
+            y1="50"
+            x2="100"
+            y2="50"
+            stroke={isActionTaken ? 'darkred' : 'green'}
+            strokeWidth="3"
+            markerEnd="url(#arrowhead)"
+            strokeDasharray="5,5"
+          />
+          {isActionTaken && (
+            <g>
+              <line x1="40" y1="45" x2="60" y2="55" stroke="red" strokeWidth="2" />
+              <line x1="40" y1="55" x2="60" y2="45" stroke="red" strokeWidth="2" />
+            </g>
+          )}
           {moneyPositions.map((pos, idx) => (
             <g key={idx} transform={`translate(${pos}, 60)`}>
-              <Banknote size={24} className="text-green-600"  color='green'/>
+              <Banknote size={24} color={isActionTaken ? 'darkred' : 'green'} />
             </g>
           ))}
         </svg>
@@ -67,17 +106,41 @@ export default function BPPipelineVisualisation() {
         </div>
 
         {/* Oil Flow Animation */}
-        <svg width="100" height="100" viewBox="0 0 100 100" color='darkblue'>
+        <svg width="100" height="100" viewBox="0 0 100 100">
           <defs>
             <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="darkblue" />
+              <polygon points="0 0, 10 3.5, 0 7" fill={isActionTaken ? 'darkred' : 'darkblue'} />
             </marker>
           </defs>
-          <text x="50" y="30" fontSize="20" fill="darkblue" textAnchor="middle">OIL</text>
-          <line x1="0" y1="50" x2="100" y2="50" stroke="darkblue" strokeWidth="3" markerEnd="url(#arrowhead2)" strokeDasharray="5,5" />
+          <text x="50" y="30" fontSize="20" fill={isActionTaken ? 'darkred' : 'darkblue'} textAnchor="middle">
+            {isActionTaken ? (
+              <>
+                <tspan x="50" dy="-5">LESS</tspan>
+                <tspan x="50" dy="15">OIL</tspan>
+              </>
+            ) : (
+              'OIL'
+            )}
+          </text>
+          <line
+            x1="0"
+            y1="50"
+            x2="100"
+            y2="50"
+            stroke={isActionTaken ? 'darkred' : 'darkblue'}
+            strokeWidth="3"
+            markerEnd="url(#arrowhead2)"
+            strokeDasharray="5,5"
+          />
+          {isActionTaken && (
+            <g>
+              <line x1="40" y1="45" x2="60" y2="55" stroke="red" strokeWidth="2" />
+              <line x1="40" y1="55" x2="60" y2="45" stroke="red" strokeWidth="2" />
+            </g>
+          )}
           {oilPositions.map((pos, idx) => (
             <g key={idx} transform={`translate(${pos}, 60)`}>
-              <Droplet size={24} className="text-blue-600" />
+              <Droplet size={24} color={isActionTaken ? 'darkred' : 'darkblue'} />
             </g>
           ))}
         </svg>
@@ -90,11 +153,18 @@ export default function BPPipelineVisualisation() {
               x="0"
               y="0"
               width="200"
-              height="300"              
+              height="300"
             />
           </svg>
           <h3 className={styles.text}>Israel</h3>
         </div>
+      </div>
+
+      {/* Take Action Button */}
+      <div className={styles.buttonWrapper}>
+        <button className={styles.takeActionButton} onClick={handleTakeAction}>
+          Take Action
+        </button>
       </div>
     </div>
   );

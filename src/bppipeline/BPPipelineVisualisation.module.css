@@ -9,10 +9,13 @@
 }
 
 .title {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: black; /* Dark purple */
+    color: red; /* Dark purple */
+    border: 4px solid red;
+    padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .diagramWrapper {
@@ -28,6 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: visible; /* Allow eleme: Take Action Against the Pipelinents to extend beyond the container */
 }
 
 .svg {
@@ -43,4 +47,25 @@
     font-weight: 600;
     color: black;
     margin-top: 0.25rem;
+}
+
+/* Take Action! */
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.takeActionButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.takeActionButton:hover {
+  background-color: darkred;
 }
