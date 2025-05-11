@@ -2,7 +2,7 @@
   "name": "eefp",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://astraeastesting.com",
+  "homepage": "https://etelan.github.io/eefp-code",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
