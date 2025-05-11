@@ -8,10 +8,10 @@ export default function DefaultPage({ children }) {
       <nav className="navbar">
         {[
           { label: "Home", url: "/" },
-          { label: "Our Demands", url: "/our-demands" },
-          { label: "The Problem", url: "/the-problem" },
-          { label: "The Journey So Far", url: "/the-journey-so-far" },
-          { label: "News", url: "/news" },
+          { label: "Our Demands", url: "/#/our-demands" },
+          { label: "The Problem", url: "/#/the-problem" },
+          { label: "The Journey So Far", url: "/#/the-journey-so-far" },
+          { label: "News", url: "/#/news" },
           { label: "Donate", url: "https://opencollective.com/energy-embargo" },
         ].map((item) => (
           <a key={item.label} href={item.url} className="nav-link">
