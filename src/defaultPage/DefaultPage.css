@@ -29,8 +29,8 @@ html, body {
     background: rgba(0, 0, 0, 0.05); /* Subtle background for the navbar */
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    position: sticky; /* Make the navbar sticky */
-    top: 0;
+    /* Removed position: sticky; */
+    /* Removed top: 0; */
     z-index: 100; /* Ensure it stays above other elements */
 }
 
@@ -43,8 +43,8 @@ html, body {
 }
 
 .nav-link:hover {
-    background-color: var(--accent-color); /* Highlight link on hover */
-    color: var(--background-color); /* Contrast text color */
+    background-color: #d0e814; /* Highlight link on hover with the specified color */
+    color: #000000; /* Black text color */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 

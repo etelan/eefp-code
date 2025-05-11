@@ -9,23 +9,10 @@ export default function HomePage() {
 
   return (
     <DefaultPage>
-
-        <h1 className="main-heading">
-          Energy Embargo <br /> for Palestine
-        </h1>
-
-        <img
-          src="/workers-logo.png"
-          alt="Energy Embargo for Palestine Logo"
-          className="main-logo"
-        />
-
         <p className="description">
           Energy Embargo for Palestine is a British-based anti-imperialist
           climate organisation fighting for a energy embargo from below.
         </p>
-
-        {isDesktop && <BPPipelineVisualisation />}
 
         <p className="description">
           In the wake of Israel's genocide in Gaza, Palestinian groups issued a
@@ -35,6 +22,8 @@ export default function HomePage() {
           targeting its lifesource.
         </p>
 
+        {isDesktop && <BPPipelineVisualisation />}
+
         <p className="description">
           We have organised mass mobilisations targeting institutional
           partnerships with BP, intervened at BP stakeholder events, published
@@ -42,18 +31,6 @@ export default function HomePage() {
           "Stop Fuelling Genocide" campaign to mobilise workers and activists
           internationally against Turkey's oil supply to Israel.
         </p>
-
-        <div className="button-container">
-          <a href="https://opencollective.com/energy-embargo" className="button">
-            Donate to support us
-          </a>
-          <a href="mailto:info@energyembargoforpalestine.com" className="button">
-            Contact us
-          </a>
-          <a href="/news" className="button">
-            Read our news and updates
-          </a>
-        </div>
     </DefaultPage>
   );
 }

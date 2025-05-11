@@ -27,6 +27,21 @@ export default function DefaultPage({ children }) {
       <main className="main-content">
         {children}
       </main>
+
+      <div className="button-container">
+          <a href="https://opencollective.com/energy-embargo" className="button">
+            Donate to support us
+          </a>
+
+
+          <a href="https://cryptpad.fr/form/#/2/form/view/cJ2tq7ViMIK8lNlguluZTI8iKQ1VbYGlwlVJmPxblqU/" className="button">
+            Take Action!
+          </a>
+
+          <a href="/news" className="button">
+            Read our news and updates
+          </a>
+      </div>
     </div>
   );
 }

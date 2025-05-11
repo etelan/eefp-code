@@ -23,18 +23,6 @@ export default function TheProblem() {
       <p className="description">
         Finally, the museum must issue a public statement committing to rejecting funding from fossil fuel and arms industries. This declaration will solidify its stance as a leader in ethical cultural stewardship.
       </p>
-
-      <div className="button-container">
-        <a href="https://opencollective.com/energy-embargo" className="button">
-          Donate to support us
-        </a>
-        <a href="mailto:info@energyembargoforpalestine.com" className="button">
-          Contact us
-        </a>
-        <a href="/news" className="button">
-          Read our news and updates
-        </a>
-      </div>
     </DefaultPage>
   );
 }

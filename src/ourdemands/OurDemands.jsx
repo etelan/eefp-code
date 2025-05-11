@@ -32,28 +32,6 @@ export default function OurDemands() {
             </li>
           </ol>
         </article>
-
-        <footer className="the-problem-footer">
-          <div className="button-container">
-            <a
-              href="https://opencollective.com/energy-embargo"
-              className="button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Donate to support us
-            </a>
-            <a
-              href="mailto:info@energyembargoforpalestine.com"
-              className="button"
-            >
-              Contact us
-            </a>
-            <a href="/news" className="button">
-              Read our news and updates
-            </a>
-          </div>
-        </footer>
       </section>
     </DefaultPage>
   );

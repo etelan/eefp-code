@@ -36,17 +36,6 @@ By disrupting the day-to-day operations of BP's most prominent public partner, w
       <p className="description">
 We've done a lot this past year, but the work is far from over. Fill out the form at our Join Us page to get involved.      </p>
 
-      <div className="button-container">
-        <a href="https://opencollective.com/energy-embargo" className="button">
-          Donate to support us
-        </a>
-        <a href="mailto:info@energyembargoforpalestine.com" className="button">
-          Contact us
-        </a>
-        <a href="/join-us" className="button">
-          Join Us
-        </a>
-      </div>
     </DefaultPage>
   );
 }
