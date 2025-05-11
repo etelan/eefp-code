@@ -47,7 +47,7 @@ export default function DefaultPage({ children }) {
             Donate to support us
           </a>
 
-          <a href="https://cryptpad.fr/form/#/2/form/view/cJ2tq7ViMIK8lNlguluZTI8iKQ1VbYGlwlVJmPxblqU/" className="button">
+          <a href="https://cryptpad.fr/form/#/2/form/view/TsBvWObjwFWFPpcIuCbTK55VUOhTtViUJ55aEUG7NQw/" className="button">
             Take Action!
           </a>
 
