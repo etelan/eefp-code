@@ -19,6 +19,20 @@ export default function DefaultPage({ children }) {
           </a>
         ))}
       </nav>
+
+      {/* Social Navbar */}
+      <nav className="social-navbar">
+        <a href="mailto:info@energyembargoforpalestine.com" className="social-link">
+          Email
+        </a>
+        <a href="https://instagram.com/energyembargoforpalestine" className="social-link">
+          Instagram
+        </a>
+        <a href="https://twitter.com/eeforpalestine" className="social-link">
+          X/Twitter
+        </a>
+      </nav>
+
       <img
         src="/eefg-logo-with-text.png"
         alt="Example"
@@ -32,7 +46,6 @@ export default function DefaultPage({ children }) {
           <a href="https://opencollective.com/energy-embargo" className="button">
             Donate to support us
           </a>
-
 
           <a href="https://cryptpad.fr/form/#/2/form/view/cJ2tq7ViMIK8lNlguluZTI8iKQ1VbYGlwlVJmPxblqU/" className="button">
             Take Action!

@@ -48,6 +48,28 @@ html, body {
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+.social-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.05); /* Subtle background for the social navbar */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.social-link {
+    text-decoration: none;
+    color: var(--text-color); /* Use the centralized text color */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #d0e814; /* Highlight color on hover */
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
