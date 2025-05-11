@@ -1,28 +1,12 @@
 import React from "react";
 import "./Homepage.css";
 import BPPipelineVisualisation from "../bppipeline/BPPipelineVisualisation";
+import DefaultPage from "../defaultPage/DefaultPage";
 
 export default function HomePage() {
   return (
-    <div className="page-container">
-      <nav className="navbar">
-        {[
-          "Home",
-          "About us",
-          "Our actions",
-          "Campaigns",
-          "Get involved",
-          "News",
-          "Donate",
-          "Contact",
-        ].map((item) => (
-          <a key={item} href="#" className="nav-link">
-            {item}
-          </a>
-        ))}
-      </nav>
+    <DefaultPage>
 
-      <main className="main-content">
         <h1 className="main-heading">
           Energy Embargo <br /> for Palestine
         </h1>
@@ -67,7 +51,6 @@ export default function HomePage() {
             Read our news and updates
           </a>
         </div>
-      </main>
-    </div>
+    </DefaultPage>
   );
 }
