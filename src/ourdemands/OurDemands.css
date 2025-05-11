@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding: 0;
   max-width: 600px;
-  list-style: none; /* Remove default list styling */
+  list-style: none;
   font-size: 1.2rem;
   line-height: 1.8;
 }
@@ -31,20 +31,22 @@
   border-radius: 8px;
   background-color: #1a3d1a;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  line-height: 1.6; /* Improve line spacing */
-  text-align: left; /* Ensure text is left-aligned */
+  line-height: 1.6;
+  text-align: left;
 }
 
 .problem-item strong {
-  display: inline; /* Change from block to inline */
-  margin-bottom: 0; /* Remove unnecessary spacing */
+  display: inline;
+  margin-bottom: 0;
 }
 
 .highlight {
-  display: inline; /* Ensure the highlight spans are inline */
+  display: inline;
   color: #ffcc00;
   font-weight: bold;
-  white-space: nowrap; /* Prevent line breaks */
+  white-space: normal; /* Allow text to wrap */
+  word-break: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensure wrapping for long words */
 }
 
 .problem-item:hover {
@@ -56,7 +58,7 @@
   font-size: 1.5rem;
   margin-right: 0.5rem;
   color: #ffcc00;
-  display: inline; /* Ensure the icon is inline with text */
+  display: inline;
 }
 
 /* Footer button styles */
@@ -86,4 +88,30 @@
 
 .button-container .button:active {
   background-color: #004d00;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .the-problem {
+    padding: 1rem;
+  }
+
+  .the-problem-header .main-heading {
+    font-size: 2rem;
+  }
+
+  .the-problem-content .problem-list {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .problem-item {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .button-container .button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
 }

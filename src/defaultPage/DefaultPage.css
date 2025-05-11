@@ -48,6 +48,64 @@ html, body {
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+.toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: block; /* Show toggle button on smaller screens */
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for links */
+        gap: 0.5rem; /* Add spacing between links */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-link {
+        width: 100%; /* Make links take full width */
+        text-align: left; /* Align text to the left */
+    }
+
+    .social-navbar {
+        flex-direction: column; /* Stack social links vertically */
+        align-items: center; /* Center align links */
+        gap: 0.5rem; /* Add spacing between links */
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Add spacing between buttons */
+        align-items: center; /* Center align buttons */
+    }
+
+    .centered-image {
+        max-width: 80%; /* Reduce image size for smaller screens */
+    }
+}
+
 .social-navbar {
     display: flex;
     justify-content: center;
@@ -97,7 +155,7 @@ html, body {
 }
 
 .description {
-    max-width: 40rem;
+    max-width: 80%;
     font-size: 1rem;
     margin-bottom: 1rem;
     color: var(--text-color); /* Use the centralized text color */
