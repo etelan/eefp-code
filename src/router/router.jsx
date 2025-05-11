@@ -10,10 +10,10 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/#/our-demands" element={<OurDemands />} />
-      <Route path="/#/the-problem" element={<TheProblem />} />
-      <Route path="/#/the-journey-so-far" element={<TheJourneySoFar />} />
-      <Route path="/#/news" element={<News />} />
+      <Route path="/our-demands" element={<OurDemands />} />
+      <Route path="/the-problem" element={<TheProblem />} />
+      <Route path="/the-journey-so-far" element={<TheJourneySoFar />} />
+      <Route path="/news" element={<News />} />
     </Routes>
   );
 }
