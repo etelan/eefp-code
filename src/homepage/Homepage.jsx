@@ -1,9 +1,12 @@
 import React from "react";
 import "./Homepage.css";
+import { useMediaQuery } from "react-responsive";
 import BPPipelineVisualisation from "../bppipeline/BPPipelineVisualisation";
 import DefaultPage from "../defaultPage/DefaultPage";
 
 export default function HomePage() {
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
+
   return (
     <DefaultPage>
 
@@ -22,7 +25,7 @@ export default function HomePage() {
           climate organisation fighting for a energy embargo from below.
         </p>
 
-        <BPPipelineVisualisation/>
+        {isDesktop && <BPPipelineVisualisation />}
 
         <p className="description">
           In the wake of Israel's genocide in Gaza, Palestinian groups issued a
