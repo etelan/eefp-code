@@ -11,7 +11,7 @@ export default function HomePage() {
     <DefaultPage>
         <p className="description">
           Energy Embargo for Palestine is a British-based anti-imperialist
-          climate organisation fighting for a energy embargo from below!
+          climate organisation fighting for a energy embargo from below.
         </p>
 
         <p className="description">
