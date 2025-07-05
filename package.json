@@ -5,7 +5,7 @@
   "homepage": "https://etelan.github.io/eefp-code",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo energyembargoforpalestine.com > dist/CNAME",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
