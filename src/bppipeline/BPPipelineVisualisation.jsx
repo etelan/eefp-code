@@ -148,7 +148,7 @@ export default function BPPipelineVisualisation() {
           ))}
         </svg>
 
-        {/* Israel */}
+        {/* 'Israel' */}
         <div className={styles.svgContainer}>
           <svg viewBox="0 0 200 200" className={styles.svg}>
             <image
@@ -159,7 +159,7 @@ export default function BPPipelineVisualisation() {
               height="200"
             />
           </svg>
-          <h3 className={styles.text}>Israel</h3>
+          <h3 className={styles.text}>'Israel'</h3>
         </div>
       </div>
 

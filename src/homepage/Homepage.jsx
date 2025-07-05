@@ -15,9 +15,9 @@ export default function HomePage() {
         </p>
 
         <p className="description">
-          In the wake of Israel's genocide in Gaza, Palestinian groups issued a
-          call to disrupt energy flow to Israel and the global energy market. In
-          Britain, where many energy companies fuelling Israel's genocide are
+          In the wake of 'Israel's' genocide in Gaza, Palestinian groups issued a
+          call to disrupt energy flow to 'Israel' and the global energy market. In
+          Britain, where many energy companies fuelling 'Israel's' genocide are
           based, we view it as our responsibility to isolate Zionism by
           targeting its lifesource.
         </p>
@@ -27,9 +27,9 @@ export default function HomePage() {
         <p className="description">
           We have organised mass mobilisations targeting institutional
           partnerships with BP, intervened at BP stakeholder events, published
-          critical research on BP's supply of oil to Israel, and launched our
+          critical research on BP's supply of oil to 'Israel', and launched our
           "Stop Fuelling Genocide" campaign to mobilise workers and activists
-          internationally against Turkey's oil supply to Israel.
+          internationally against Turkey's oil supply to 'Israel'.
         </p>
     </DefaultPage>
   );

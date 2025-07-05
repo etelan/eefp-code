@@ -18,7 +18,7 @@ export default function News() {
     {
       date: "2 May2024.",
       title: "Our research with Shado Mag",
-      description: "Pipeline to Genocide: BP's Oil Route to Israel",
+      description: "Pipeline to Genocide: BP's Oil Route to 'Israel'",
       url: "https://shado-mag.com/bp-oil-pipeline-israel-palestine-genocide-investigation/",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/HDPE_Pipeline_in_a_harsh_Australian_environment.jpg/2560px-HDPE_Pipeline_in_a_harsh_Australian_environment.jpg",
     },
@@ -26,7 +26,7 @@ export default function News() {
       date: " 28 November 2024",
       title: "Middle East Eye coverage of our research",
       description:
-        "New evidence reveals oil shipments from Turkey to Israel continue despite embargo",
+        "New evidence reveals oil shipments from Turkey to 'Israel' continue despite embargo",
       url: "https://www.middleeasteye.net/news/new-evidence-reveals-oil-shipments-turkey-israel-continue-despite-embargo",
       image: "https://upload.wikimedia.org/wikipedia/commons/7/75/Supertanker_AbQaiq.jpg",
     },
@@ -47,7 +47,7 @@ export default function News() {
     {
       date: "10 September 2024",
       title: "Interview with Atmos",
-      description: "Activists accuse BP of being complicit in genocide for selling oil to Israel, and they’re calling for an energy embargo to end the crisis in Gaza.",
+      description: "Activists accuse BP of being complicit in genocide for selling oil to 'Israel', and they’re calling for an energy embargo to end the crisis in Gaza.",
       url: "https://atmos.earth/israels-war-machine-needs-oil-should-the-world-cut-it-off/",
       image: "https://atmos.earth/wp-content/uploads/2024/10/energy-embargo-israel-hero-1920x1535.jpg", 
     },
@@ -68,7 +68,7 @@ export default function News() {
     {
       date: "15 February 2024",
       title: "Why We Occupied the British Museum | Jacobin",
-      description: "On Sunday, activists occupied the British Museum to demand that it end its partnership with BP after Israel granted the energy firm gas exploration licenses off the coast of Gaza. Here, the activists write about why they occupied the museum.",
+      description: "On Sunday, activists occupied the British Museum to demand that it end its partnership with BP after 'Israel' granted the energy firm gas exploration licenses off the coast of Gaza. Here, the activists write about why they occupied the museum.",
       url: "https://jacobin.com/2024/02/british-museum-israel-bp-gaza",
       image: "https://images.jacobinmag.com/wp-content/uploads/2024/02/15090917/GettyImages-929369312.jpg", 
     },

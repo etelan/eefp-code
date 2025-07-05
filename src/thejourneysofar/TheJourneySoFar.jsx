@@ -21,7 +21,7 @@ On 25 March 2024, we picketed the British Museum for an entire day, with visitor
 On 8 June 2024, we joined BP or not BP and Parents For Palestine in a weekend of action, occupying the British Museum's courtyard with child-friendly activities, such as chalking on the grounds messages of protest, as BP or not BP constructed a mosaic inside the Museum's Great Hall.       </p>
 
       <p className="description">
-On 3 August 2024, we supported culture workers in occupying the British Museum and organising teach-ins on Israel's decimation of culture institutions in Gaza. We recieved endorsement from the Public, Commercial and Services Union's Culture Group.       </p>
+On 3 August 2024, we supported culture workers in occupying the British Museum and organising teach-ins on 'Israel's' decimation of culture institutions in Gaza. We recieved endorsement from the Public, Commercial and Services Union's Culture Group.       </p>
 
       <p className="description">
 As well as mass mobilisations, we have also disrupted the British Museum's lectures and film festivals. 
