@@ -170,7 +170,7 @@ export default function BPPipelineVisualisation() {
             <button
               className={styles.flashingButton}
               onClick={() => window.open(
-                "https://cryptpad.fr/form/#/2/form/view/TsBvWObjwFWFPpcIuCbTK55VUOhTtViUJ55aEUG7NQw/",
+                "https://bit.ly/JoinEEFP",
                 "_blank",
                 "noopener,noreferrer"
               )}

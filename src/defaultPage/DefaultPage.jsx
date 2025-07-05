@@ -60,7 +60,7 @@ export default function DefaultPage({ children }) {
             Donate to support us
           </a>
 
-          <a href="https://cryptpad.fr/form/#/2/form/view/TsBvWObjwFWFPpcIuCbTK55VUOhTtViUJ55aEUG7NQw/" className="button">
+          <a href="https://bit.ly/JoinEEFP" className="button">
             Take Action!
           </a>
 
